@@ -1,0 +1,148 @@
+/* Reset some default styles */
+/* Remove default margin and padding from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This ensures padding does not affect the total width of elements */
+}
+
+/* Body and html elements take up full viewport width */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Ensure nav fills the horizontal space */
+nav {
+  width: 100%;
+  display: block;
+}
+
+/* Style adjustments for the nav bar */
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0; /* Adjust to your liking */
+  margin: 0 auto; /* Centers the nav ul if not full width */
+  background-color: #333;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em 1em; /* This gives a nice padding around the links */
+}
+
+nav ul li {
+  padding: 0 20px; /* Horizontal padding for each li */
+}
+
+/* Footer stretches to the edges */
+footer {
+  width: 100%;
+}
+
+
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation bar styles */
+nav ul {
+  list-style: none;
+  background-color: #333;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Section styles */
+section {
+  padding: 2em;
+  border-bottom: 1px solid #ddd;
+}
+
+#profile img {
+  max-width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin: 0.5em 0;
+  }
+}
+
+/* Additional styles for the newly added sections */
+.education-entry, .work-entry, .skill-entry, .project-entry, .volunteer-entry {
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  margin-bottom: 0.75em;
+  color: #2a2a2a;
+}
+
+.education-entry h3, .work-entry h3, .project-entry h3 {
+  font-size: 1.1em;
+  color: #1a1a1a;
+}
+
+ul {
+  list-style: inside;
+  margin-left: 1em;
+}
+
+.skill-entry p, .volunteer-entry p {
+  font-style: italic;
+}
+
+/* Ensure footer content is centered on mobile */
+@media (max-width: 600px) {
+  .footer-link {
+      display: block;
+      margin-bottom: 0.5em;
+  }
+}
